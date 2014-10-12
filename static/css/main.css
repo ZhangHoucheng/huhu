@@ -1,0 +1,10 @@
+body{
+	color :blue;
+	text-align: center;
+	background:url(../image/background.gif) repeat;
+}
+
+h1{
+	text-align: center;
+	font-size: 24px;
+}
