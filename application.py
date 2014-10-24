@@ -12,6 +12,7 @@ class Application(tornado.web.Application):
     def __init__(self):
         handlers = [
                     (r'/',IndexHandler),
+#                     (r'/about',about)
                     
                     ]
         settings = dict(

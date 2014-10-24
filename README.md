@@ -1,10 +1,6 @@
-#huhu
-====
+#HuhuKingdom
 
-huhukingdom
-
-
-## 搭建开发环境
+## develop environment
 
 python
 tornado
