@@ -5,7 +5,7 @@ from tornado.web import RequestHandler
 from config import upload_dir
 import os, sys
 
-class IndexHandler(RequestHandler):
+class AboutHandler(RequestHandler):
     def get(self):
         list = os.listdir(upload_dir)
-        self.render('index.html',list=list[:4])
+        self.render('about.html',list=list[:4])

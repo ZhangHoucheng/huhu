@@ -4,6 +4,4 @@
 import psycopg2
 from config import *
 
-conn = psycopg2.connect(database=db, user=user, password=password, host=host, port=db_port) 
-cur = conn.cursor()
-
+db = psycopg2.connect(database=dbname, user=user, password=password, host=host, port=db_port) 

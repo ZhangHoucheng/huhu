@@ -4,10 +4,11 @@
 import os
 
 #database config
-host = 'localhost'
+# host = 'localhost'
+host = '192.168.27.196'
 db_port = '5432'
 user = 'postgres'
-db = 'huhu'
-password = ''
+dbname = 'huhu'
+password = 'postgres'
 
 upload_dir = os.getcwd()+"\\static\\image\\upload\\"
