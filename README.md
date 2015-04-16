@@ -4,5 +4,4 @@
 
 python
 tornado
-postgresql
 linux
