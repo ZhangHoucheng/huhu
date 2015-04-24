@@ -1,0 +1,37 @@
+{% extends "base.html" %} {%block header %}
+<script type="text/javascript" src="{{static_url('js/index.js')}}"></script>
+{%end %} {%block content %}
+
+<div class="jumbotron">
+	<h1>Huhu Kingdom</h1>
+	<p class="lead">HuhuKingdom is an awesome cartoon website.You will
+		like it.</p>
+</div>
+
+<div class="row col-xs-12 col-sm-9">
+	{% for image in list %}
+	<div class="col-md-4">
+		<h2>heading</h2>
+		<a href="/downloads/details/111"><img alt="logo" src="{{static_url('image/upload/'+image)}}"></a>
+		<p>{{image}}</p>
+		<p>
+			<a class="btn btn-default" href="#" role="button">View details
+				&raquo;</a>
+		</p>
+	</div>
+	{%end%}
+</div>
+
+<div class="col-xs-6 col-sm-3">
+	<h3>download</h3>
+	<div>
+		<ul>
+		<li><a class="lead" href="/downloads/emotions">emotion</a></li>
+		<li><a class="lead" href="/downloads/wallpaper">wallpaper</a></li>
+		</ul>
+	</div>
+	
+</div>
+
+
+{%end %}
