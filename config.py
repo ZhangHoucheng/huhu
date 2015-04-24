@@ -11,4 +11,7 @@ user = 'postgres'
 dbname = 'huhu'
 password = 'postgres'
 
-upload_dir = os.getcwd()+"\\static\\image\\upload\\"
+if os.name == 'nt':
+    upload_dir = os.getcwd()+"\\static\\image\\upload\\"
+else:
+    upload_dir = os.getcwd()+"/static/image/upload/"
