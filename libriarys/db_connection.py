@@ -25,19 +25,19 @@ def create_user(name,email,password,client_ip,status ="1"):
     db.commit()
     db.close()
 
-def create_image(name,inname,description='',tag=''):
-    url = upload_dir + inname
+def create_image(name,url,description='',tag='',type = ''):
+#     url = upload_dir + inname
     cur = db.cursor()
     current_time = time.strftime('%Y-%m-%d',time.localtime(time.time()))
-    query = "insert into image (name,url,created_at,description,tag) \
-    values('%s','%s','%s','%s','%s')" % (name,url,current_time,description,tag)
+    query = "insert into image (name,url,created_at,description,tag,type) \
+    values('%s','%s','%s','%s','%s','%s')" % (name,url,current_time,description,tag,type)
     cur.execute(query)
     cur.close()
     db.commit()
     db.close()
 
 if __name__ == '__main__':
-#     create_image('huhu','a.gif','呼呼是个大笨猫','胖胖')
+#     create_image('huhu','a.gif','呼呼是个大笨猫','胖胖','emotion')
     url = upload_dir+'a.gif';
     print(url)
     
