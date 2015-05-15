@@ -28,6 +28,9 @@ class Application(tornado.web.Application):
                     (r'/admin',AdminHandler),
                     (r'/login',LoginHandler),
                     (r'/admin/upload',UploadHandler),
+#                     (r'/register',registerHandler),
+#                     (r'/user/(\w+)',userHandler),  
+
 
                     ]
         settings = dict(

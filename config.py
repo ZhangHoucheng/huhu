@@ -11,8 +11,9 @@ user = 'root'
 dbname = 'huhu'
 password = ''
 
-if os.name == 'nt':
+if os.name =='nt':
     upload_dir = os.getcwd()+"\\static\\image\\upload\\"
-else:
+else :
     upload_dir = os.getcwd()+"/static/image/upload/"
 
+    

@@ -6,16 +6,18 @@
 		like it.</p>
 </div>
 
-<div class="row col-xs-12 col-sm-9">
-{{list}}
+<div class="row col-xs-12 col-sm-9" style="text-align: center;">
+	<img alt="logo"
+		src="{{static_url('image/upload/'+image['type']+'/'+image['url'])}}">
 </div>
+
 
 <div class="col-xs-6 col-sm-3">
 	<h3>download</h3>
 	<div>
 		<ul>
-		<li><a class="lead" href="/downloads/emotions">emotion</a></li>
-		<li><a class="lead" href="/downloads/wallpaper">wallpaper</a></li>
+			<li><a class="lead" href="/downloads/emotions">emotion</a></li>
+			<li><a class="lead" href="/downloads/wallpaper">wallpaper</a></li>
 		</ul>
 	</div>
 

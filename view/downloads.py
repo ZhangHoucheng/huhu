@@ -4,18 +4,19 @@
 from tornado.web import RequestHandler
 from config import upload_dir
 import os, sys
+from libriarys import db_connection
 
 class DownloadHandler(RequestHandler):
     def get(self):
-        list = os.listdir(upload_dir)
+        list = db_connection.get_image("0", "9", "emotion")
         self.render('downloads.html',list=list)
         
 class DetailsHandler(RequestHandler):
     def get(self,id=None,type='emotion'):
-        image=['id','type']
-        self.render('details.html',list=image)
+        image = db_connection.get_image_by_id(id)
+        self.render('details.html',image=image)
 
 class Download_wallpaperHandler(RequestHandler):
     def get(self):
-        list = os.listdir(upload_dir)
-        self.render('downloads.html',list = list)
+        image = db_connection.get_image("0", "9", "wallpaper")
+        self.render('downloads.html',list = image)
