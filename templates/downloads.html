@@ -1,16 +1,10 @@
 {% extends "base.html" %} {%block content %}
 
-<div class="jumbotron">
-	<h1>Huhu Kingdom</h1>
-	<p class="lead">HuhuKingdom is an awesome cartoon website.You will
-		like it.</p>
-</div>
-
 <div class="row col-xs-12 col-sm-9">
 	{% for image in list %}
 	<div class="col-md-4">
 		<a href="/downloads/details/{{image['id']}}"><img alt="logo"
-			src="{{static_url('image/upload/'+image['type']+'/'+image['url'])}}"></a>
+			src="{{static_url('image/upload/'+image['type']+'/'+image['url'])}}" width="100%" ></a>
 		<p>
 			<a class="btn btn-default" href="/downloads/details/{{image['id']}}"
 				role="button">View details</a>
@@ -45,6 +39,5 @@
 	</div>
 
 </div>
-
 
 {%end %}

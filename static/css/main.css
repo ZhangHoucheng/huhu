@@ -1,7 +1,6 @@
 body{
 	color :black;
-	
-	background:url(../image/) repeat;
+	background:url(../image/index/background.png) repeat-x;
 }
 
 h1{

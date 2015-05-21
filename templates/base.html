@@ -1,18 +1,24 @@
 {% extends "master.html" %} {%block body %}
 <div class="container">
-	<div class="header">
-		<img class="img-circle pull-left" alt="logo"
-			src="{{static_url('image/logo.png')}}">
-		<ul class="nav nav-pills pull-right" role="tablist">
-			<li role="presentation"><a href="/">首页</a></li>
-			<li role="presentation"><a href="/cartoons">漫画</a></li>
-			<li role="presentation"><a href="/downloads/emotions">素材下载</a></li>
-			<li role="presentation"><a href="/movies">动画</a></li>
-			<li role="presentation"><a href="/login">登录</a></li>
-			<li role="presentation"><a href="/about">关于</a></li>
-		</ul>
-		<h3 class="text-muted">Huhu Kingdom</h3>
+<div class="header col-md-12">
+	<h1></h1>
 	</div>
+	<div class="header col-md-12">
+		<img class=" col-md-offset-4" alt="logo"
+			src="{{static_url('image/index/logo.png')}}">
+	</div>
+	<div class="header col-md-12">
+		<ul class="nav nav-pills col-md-offset-2" >
+			<li ><a href="/" ><img src="{{static_url('image/index/index.png')}}"/></a></li>
+			<li ><a href="/cartoons" ><img src="{{static_url('image/index/cartoon.png')}}"/></a></li>
+			<li ><a href="/movies" ><img src="{{static_url('image/index/movie.png')}}"/></a></li>
+			<li ><a href="/roles" ><img src="{{static_url('image/index/roles.png')}}"/></a></li>
+			<li ><a href="/downloads/emotions" ><img src="{{static_url('image/index/material.png')}}"/></a></li>
+			<li ><a href="/team" ><img src="{{static_url('image/index/team.png')}}"/></a></li>
+			<li ><a href="/about" ><img src="{{static_url('image/index/about.png')}}"/></a></li>
+		</ul>
+	</div>
+	
 {%block content %}{%end %}
 </div>
 <!-- /container -->
