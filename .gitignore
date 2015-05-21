@@ -4,4 +4,4 @@
 .pydevproject
 .Rhistory
 view/*.pyc
-
+.*
